@@ -1,0 +1,372 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Barlow', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: hsl(210, 10%, 33%);
+}
+
+h2, h3, h4 {
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
+  color: rgb(35, 48, 62);
+}
+
+a {
+  text-decoration: none;
+  color: hsl(210, 10%, 33%);
+}
+
+.text-color{
+  color: white;
+}
+
+.header{
+    background-image: url(Img/image-header\ \(1\).jpg);
+    background-position: bottom;
+    height: 100vh;
+    background-size: cover;
+}
+
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+
+.nav-list{
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+.btn-contact{
+  background: white;
+  color: rgb(35, 48, 62);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.header-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+h1{
+    font-size: 4rem;
+    color: white;
+}
+
+.arcticle-block{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.row {
+  padding: 4rem;
+  width: 50vw;
+  height: 50vh;
+  color: hsl(212, 27%, 19%);
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.learn-link {
+  display: inline-block;
+  margin-top: 4rem;
+  font-weight: bold;
+  position: relative;
+}
+
+.learn-link.yellow {
+  border-bottom: 4px solid hsla(51, 100%, 49%, 0.4);
+}
+
+.learn-link.red {
+  border-bottom: 4px solid #fe786766;
+}
+
+.transform-img {
+    background-image: url(Img/image-transform\ \(1\).jpg);
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+}
+
+.stand-out-img{
+    background-image: url(Img/image-stand-out\ \(1\).jpg);
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.graphic-img{
+  background-image: url(Img/image-graphic-design\ \(1\).jpg);
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+}
+
+.graphic{
+  align-content: end;
+  text-align: center;
+  padding: 100px;
+}
+
+.photography-img{
+  background-image: url(Img/image-photography\ \(1\).jpg);
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+}
+
+.photography{
+  align-content: end;
+  text-align: center;
+  padding: 100px;
+}
+
+.testimonials {
+  text-align: center;
+  padding: 5rem 2rem;
+}
+
+.clients {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.client {
+  max-width: 300px;
+}
+
+.client img {
+  border-radius: 50%;
+  width: 70px;
+  margin-bottom: 1rem;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  height: 400px;
+}
+
+.img-milk { 
+  background-image: url(Img/image-gallery-milkbottles\ \(1\).jpg);
+  background-size: cover;
+  background-position: center;
+}
+.img-orange { 
+  background-image: url(Img/image-gallery-orange\ \(1\).jpg);
+  background-size: cover;
+  background-position: center;
+}
+.img-cone {
+  background-image: url(Img/image-gallery-cone\ \(1\).jpg);
+  background-size: cover;
+  background-position: center;
+}
+.img-sugar { 
+  background-image: url(Img/image-gallery-sugar-cubes.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+footer {
+  background-color: hsl(168, 34%, 41%);
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+.footer-logo {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  list-style: none;
+  margin-bottom: 2rem;
+}
+
+.socials img {
+  width: 20px;
+  margin: 0 0.5rem;
+}
+
+.credits {
+  font-size: 0.75rem;
+  margin-top: 2rem;
+  opacity: 0.7;
+}
+
+.paragraph{
+  color: #000000;
+}
+
+span{
+  color: rgba(0, 0, 255, 0.384);
+}
+
+.hamburger img {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.hamburger {
+  display: none;
+}
+
+[name="hamburger"] {
+  display: none;
+}
+
+/*Partie Responsive*/
+@media only screen and (max-width: 768px){
+   .hamburger {
+    display: block;
+  }
+
+   #hamburger:checked + label + .nav-list{
+    display: flex;
+    flex-direction: column;
+  }
+
+   .nav-list{
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    background-color: blue;
+    width: 150px;
+    border-radius: 10px;
+    padding: 1rem;
+  }
+
+   .header{
+      background-image: url(Img/image-header\ \(1\).jpg);
+      background-position: bottom;
+      height: 50vh;
+      background-size: cover;
+    }
+
+    .header-section h1{
+      font-size: 12px;
+    }
+
+     .header-section{
+      gap: 1rem;
+    }
+
+    .nav-list{
+      font-size: 12px;
+    }
+
+    .header-section img{
+      max-width: 100%;
+      width: 20px;
+    }
+
+    .logo img{
+      max-width: 100%;
+      width: 80px;
+    } 
+
+    .arcticle-block{
+      flex-direction: column;
+    }
+    .row{
+      padding: 1.5rem;
+    }
+
+    .transform h2{
+      font-size: 12px;
+    }
+     .transform p{
+      font-size: 10px;
+    }
+    .learn-link{
+      font-size: 10px;
+    }
+    .transform-img{
+      height: 200px;
+      width: 400px;
+    }
+
+    .stand-out-img{
+      height: 200px;
+      width: 400px;
+    }
+    .stand-out h2{
+      font-size: 12px;
+    }
+    .stand-out p{
+      font-size: 10px;
+    }
+
+    .graphic-img{
+      height: 200px;
+      width: 400px;
+      
+    }
+    .graphic h3{
+    font-size: 12px;
+    }
+    .graphic p{
+      font-size: 10px;
+    }
+
+  .photography-img{
+    height: 200px;
+    width: 400px;
+  }
+
+  .photography h3{
+    font-size: 12px;
+  }
+  .photography p{
+    font-size: 10px;
+  }
+  h3,h4{
+    font-size: 12px;
+  }
+  p{
+    font-size: 9.5px;
+  }
+  .gallery {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .footer-links {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+}
+
+
+
+
+
